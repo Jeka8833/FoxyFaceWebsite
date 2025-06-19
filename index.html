@@ -2,35 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-          content="The free FoxyFace app lets you control your avatar's face in VRChat using any webcam or camera, whether it's connected to your computer or on your phone.">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="The free FoxyFace app lets you control your avatar's face in VRChat using any webcam or camera, whether it's connected to your computer or on your phone."
+          name="description">
     <title>FoxyFace | Face Tracking Application for VRChat</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="144x144" href="images/favicon-144x144.png">
+    <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="images/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png">
+    <link href="images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="images/favicon-144x144.png" rel="icon" sizes="144x144" type="image/png">
+    <link href="images/favicon-apple.jpg" rel="apple-touch-icon">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet"
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" rel="stylesheet">
+    <link crossorigin="anonymous"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
           integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+          referrerpolicy="no-referrer" rel="stylesheet"/>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    <script crossorigin="anonymous"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/theme.js"></script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "FoxyFace",
+            "description": "The free FoxyFace app lets you control your avatar's face in VRChat using any webcam or camera, whether it's connected to your computer or on your phone.",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Windows, macOS, Linux",
+            "softwareRequirements": [
+                "VRCFaceTracking",
+                "VRChat"
+            ],
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "url": "https://foxyface.jeka8833.pp.ua/",
+            "image": "https://foxyface.jeka8833.pp.ua/images/favicon-144x144.png",
+            "downloadUrl": "https://github.com/Jeka8833/FoxyFace/wiki/Install-FoxyFace",
+            "screenshot": "https://foxyface.jeka8833.pp.ua/images/mainPage/background.jpg",
+            "publisher": {
+                "@type": "Person",
+                "name": "Jeka8833",
+                "url": "https://github.com/Jeka8833"
+            }
+        }
+    </script>
 </head>
 <body>
 <div style="background: rgba(0, 0, 0, 1);">
-    <img src="images/mainPage/background.jpg" alt="Background"
-         class="position-absolute object-fit-cover opacity-75 w-100 vh-100 z-2" loading="lazy">
+    <img alt="Background" class="position-absolute object-fit-cover opacity-75 w-100 vh-100 z-2"
+         loading="lazy" src="images/mainPage/background.jpg">
 
     <div class="position-absolute d-flex align-items-end justify-content-end w-100 vh-100 z-3">
-        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#imageInfo">Image info
+        <button class="btn btn-link" data-bs-target="#imageInfo" data-bs-toggle="modal" type="button">Image info
         </button>
     </div>
 
@@ -39,36 +70,40 @@
             <div>
                 <div class="float-md-start mb-0 pt-3">
                     <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold py-1 px-2"
-                       href="https://github.com/Jeka8833/FoxyFace/wiki" target="_blank" rel="noopener noreferrer">
-                        Documentation</a>
+                       href="https://github.com/Jeka8833/FoxyFace/wiki" rel="noopener noreferrer nofollow"
+                       target="_blank">
+                        Documentation
+                    </a>
                     <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fw-bold py-1 px-2"
-                       href="https://github.com/Jeka8833/FoxyFace" target="_blank" rel="noopener noreferrer">GitHub</a>
+                       href="https://github.com/Jeka8833/FoxyFace" rel="noopener noreferrer nofollow" target="_blank">
+                        GitHub
+                    </a>
                 </div>
 
                 <nav class="nav nav-masthead justify-content-center float-md-end pt-3">
                     <ul class="navbar-nav justify-content-end flex-grow-1">
                         <li class="nav-item dropdown">
-                            <a class="btn btn-light dropdown-toggle theme-icon-active" href="#" role="button"
-                               data-bs-toggle="dropdown"
-                               aria-expanded="false">
+                            <a aria-expanded="false" aria-label="Change Website Theme"
+                               class="btn btn-light dropdown-toggle theme-icon-active" data-bs-toggle="dropdown"
+                               href="#" role="button">
                                 <i class="bi bi-diamond-half"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end shadow-lg">
                                 <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center"
-                                            data-bs-theme-value="light">
+                                    <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                                            type="button">
                                         <i class="bi bi-brightness-high-fill opacity-50 me-2"></i>Light
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center"
-                                            data-bs-theme-value="dark">
+                                    <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                                            type="button">
                                         <i class="bi bi-moon-stars-fill opacity-50 me-2"></i>Dark
                                     </button>
                                 </li>
                                 <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center"
-                                            data-bs-theme-value="auto">
+                                    <button class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"
+                                            type="button">
                                         <i class="bi bi-diamond-half opacity-50 me-2"></i>Auto
                                     </button>
                                 </li>
@@ -79,10 +114,11 @@
             </div>
         </header>
 
-        <div style="max-width: 21em" class="mx-auto text-light">
+        <div class="mx-auto text-light" style="max-width: 21em">
             <h1>FoxyFace</h1>
-            <h5>An application that allows you to control your avatar's face in VRChat using your real face.</h5>
-            <a href="#install" class="btn btn-lg btn-light fw-bold border-white bg-white mt-4">Install</a>
+            <p class="h5">An application that allows you to control your avatar's face in VRChat using your real
+                face.</p>
+            <a class="btn btn-lg btn-light fw-bold border-white bg-white mt-4" href="#install">Install</a>
         </div>
 
         <div class="mt-auto"></div>
@@ -106,8 +142,9 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <a class="btn btn-primary" href="https://github.com/Jeka8833/FoxyFace/wiki/Install-FoxyFace"
-                           target="_blank" rel="noopener noreferrer">See guide</a>
+                        <a class="btn btn-primary nofollow"
+                           href="https://github.com/Jeka8833/FoxyFace/wiki/Install-FoxyFace"
+                           rel="noopener noreferrer nofollow" target="_blank">See guide</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +162,7 @@
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-primary" href="https://store.steampowered.com/app/3329480/VRCFaceTracking/"
-                           target="_blank" rel="noopener noreferrer">Download</a>
+                           rel="noopener noreferrer nofollow" target="_blank">Download</a>
                     </div>
                 </div>
             </div>
@@ -145,7 +182,7 @@
                     <div class="card-footer">
                         <a class="btn btn-primary"
                            href="https://github.com/Jeka8833/FoxyFace/wiki/Install-Module-from-Module-Registry"
-                           target="_blank" rel="noopener noreferrer">See guide</a>
+                           rel="noopener noreferrer nofollow" target="_blank">See guide</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +211,7 @@
                     <div class="card-footer">
                         <a class="btn btn-primary"
                            href="https://github.com/Jeka8833/FoxyFace/wiki/Using-another-device-as-a-camera"
-                           target="_blank" rel="noopener noreferrer">See guide</a>
+                           rel="noopener noreferrer nofollow" target="_blank">See guide</a>
                     </div>
                 </div>
             </div>
@@ -193,7 +230,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vrchatSetup">See guide
+                        <button class="btn btn-primary" data-bs-target="#vrchatSetup" data-bs-toggle="modal">See guide
                         </button>
                     </div>
                 </div>
@@ -214,7 +251,7 @@
                     </div>
                     <div class="card-footer">
                         <a class="btn btn-primary" href="https://github.com/Jeka8833/FoxyFace/wiki/Update-Babble-Model"
-                           target="_blank" rel="noopener noreferrer">See guide</a>
+                           rel="noopener noreferrer nofollow" target="_blank">See guide</a>
                     </div>
                 </div>
             </div>
@@ -228,59 +265,98 @@
         <div class="accordion shadow-lg">
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#pane1" aria-expanded="false" aria-controls="pane1">
+                    <button aria-controls="pane1" aria-expanded="false" class="accordion-button collapsed"
+                            data-bs-target="#pane1" data-bs-toggle="collapse" type="button">
                         The quality of tracking of some parameters is not very good
                     </button>
                 </div>
-                <div id="pane1" class="accordion-collapse collapse">
+                <div class="accordion-collapse collapse" id="pane1">
                     <div class="accordion-body">
                         The parameters of the tongue, cheeks or jaw may not track well. The solution to this may be:
                         <ol>
-                            <li><a href="https://github.com/Jeka8833/FoxyFace/wiki/Update-Babble-Model" target="_blank"
-                                   rel="noopener noreferrer">Update the neural network from Project Babble.</a></li>
-                            <li><a href="https://github.com/Jeka8833/FoxyFace/wiki/Auto-Calibration" target="_blank"
-                                   rel="noopener noreferrer">Perform Auto Calibration.</a></li>
-                            <li><a href="https://github.com/Jeka8833/FoxyFace/wiki/Camera-Settings" target="_blank"
-                                   rel="noopener noreferrer">Adjust camera settings and tweak the environment (lighting,
-                                background, position, etc.).</a></li>
+                            <li><a href="https://github.com/Jeka8833/FoxyFace/wiki/Update-Babble-Model"
+                                   rel="noopener noreferrer nofollow"
+                                   target="_blank">Update the neural network from Project Babble.</a>
+                            </li>
+                            <li><a href="https://github.com/Jeka8833/FoxyFace/wiki/Auto-Calibration"
+                                   rel="noopener noreferrer nofollow"
+                                   target="_blank">Perform Auto Calibration.</a></li>
+                            <li><a href="https://github.com/Jeka8833/FoxyFace/wiki/Camera-Settings"
+                                   rel="noopener noreferrer nofollow"
+                                   target="_blank">Adjust camera settings and tweak the environment
+                                (lighting, background, position, etc.).</a></li>
                         </ol>
 
-                        This is due to the non-ideality of neural networks, if you know other neural networks that can
-                        process in real time images, then let Jeka8833 know.
+                        <p>The main reason is the imperfection of neural networks. If you know other neural networks
+                            that can process images in real-time, please inform Jeka8833.</p>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#pane2" aria-expanded="false" aria-controls="pane2">
+                    <button aria-controls="pane2" aria-expanded="false" class="accordion-button collapsed"
+                            data-bs-target="#pane2" data-bs-toggle="collapse" type="button">
                         Can FoxyFace work with Selfie Expression?
                     </button>
                 </div>
-                <div id="pane2" class="accordion-collapse collapse">
+                <div class="accordion-collapse collapse" id="pane2">
                     <div class="accordion-body">
-                        Yes, it can. Instructions can be found <a
-                            href="https://github.com/Jeka8833/FoxyFace/wiki/Setup-Selfie-Expression" target="_blank"
-                            rel="noopener noreferrer">here</a>.
+                        <div class="alert alert-info" role="alert">
+                            <h4 class="alert-heading">NOTE</h4>
+                            <p>The main problem is that one camera can be used by only one application (the camera in
+                                most cases cannot split the video stream between two applications). These instructions
+                                will help you split a video stream into two applications.</p>
+                            <p>The author does not have a VRC+ so the instructions may contain mistakes or
+                                inaccuracies.</p>
+                        </div>
+
+                        Here's a rough guide on how to get FoxyFace and Selfie Expression working simultaneously:
+                        <ol>
+                            <li>
+                                <a href="https://obsproject.com/" rel="noopener noreferrer nofollow" target="_blank">
+                                    Install OBS application</a>. Video instructions can be found <a
+                                    href="https://www.youtube.com/watch?v=QGxdTGhhJyI"
+                                    rel="noopener noreferrer nofollow"
+                                    target="_blank">here</a>, but you don't need to create any scenes, just install the
+                                app.
+                            </li>
+                            <li>Close VRChat and FoxyFace applications.</li>
+                            <li>
+                                Add a camera to the OBS scene. Video instructions can be found <a
+                                    href="https://www.youtube.com/watch?v=vLN29GPp4Ig"
+                                    rel="noopener noreferrer nofollow" target="_blank">here</a>.
+                            </li>
+                            <li>
+                                Click on the Start Virtual Camera button, <a
+                                    href="https://obsproject.com/kb/virtual-camera-guide"
+                                    rel="noopener noreferrer nofollow" target="_blank">here</a> are instructions on how
+                                to do it.
+                            </li>
+                            <li>Run VRChat and select the OBS camera in VRChat.</li>
+                            <li>Run FoxyFace and change <a
+                                    href="https://github.com/Jeka8833/FoxyFace/wiki/Camera-Settings#camera-id"
+                                    rel="noopener noreferrer nofollow" target="_blank">Camera ID</a> in FoxyFace.
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <div class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#pane3" aria-expanded="false" aria-controls="pane3">
+                    <button aria-controls="pane3" aria-expanded="false" class="accordion-button collapsed"
+                            data-bs-target="#pane3" data-bs-toggle="collapse" type="button">
                         Avatar head rotation doesn't work
                     </button>
                 </div>
-                <div id="pane3" class="accordion-collapse collapse">
+                <div class="accordion-collapse collapse" id="pane3">
                     <div class="accordion-body">
                         Instructions on how to track head rotation can be found <a
-                            href="https://github.com/Jeka8833/FoxyFace/wiki/Head-Rotation" target="_blank"
-                            rel="noopener noreferrer">here</a>. But the instructions may be too complicated for
-                        beginners if you don't want to spend money on <a
-                            href="https://wiki.vrchat.com/wiki/VRC%2B" target="_blank"
-                            rel="noopener noreferrer">VRC+</a>.
+                            href="https://github.com/Jeka8833/FoxyFace/wiki/Head-Rotation"
+                            rel="noopener noreferrer nofollow"
+                            target="_blank">here</a>. But the instructions may be too complicated for
+                        beginners if you don't want to spend money on <a href="https://wiki.vrchat.com/wiki/VRC%2B"
+                                                                         rel="noopener noreferrer nofollow"
+                                                                         target="_blank">VRC+</a>.
                     </div>
                 </div>
             </div>
@@ -291,10 +367,11 @@
         <h2 class="text-center">Contact</h2>
         <hr/>
         <div class="row row-cols-1 row-cols-md-2 g-4 pt-5">
-            <div style="max-width: 400px" class="col mx-auto">
+            <div class="col mx-auto" style="max-width: 400px">
                 <div class="card h-100 border border-0">
-                    <img src="images/mainPage/Jeka8833-avatar.jpg" class="card-img-top rounded-circle mx-auto"
-                         alt="Jeka8833 Avatar" style="max-width: 150px" loading="lazy">
+                    <img alt="Jeka8833 Avatar" class="card-img-top rounded-circle mx-auto"
+                         loading="lazy" src="images/mainPage/Jeka8833-avatar.jpg"
+                         style="max-width: 150px; aspect-ratio: 1">
                     <div class="card-body">
                         <h3 class="card-title">Jeka8833</h3>
                         <hr/>
@@ -305,12 +382,12 @@
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         <a class="text-decoration-none" href="https://github.com/Jeka8833"
-                                           target="_blank" rel="noopener noreferrer">
+                                           rel="noopener noreferrer nofollow" target="_blank">
                                             <i class="bi bi-github"></i> Jeka8833
                                         </a>
                                     </li>
                                     <li class="list-group-item">
-                                        <a class="text-decoration-none"><i class="bi bi-discord"></i>
+                                        <a class="text-decoration-none" href="#"><i class="bi bi-discord"></i>
                                             Jeka8833
                                         </a>
                                     </li>
@@ -332,7 +409,8 @@
 <footer class="container-xxl flex-grow-0 flex-shrink-1 border-top">
     <div class="py-1 m-1 d-flex align-items-center flex-column flex-sm-row justify-content-between">
         <p class="m-0">Created by: Jeka8833, 2025 year</p>
-        <a class="link-secondary fs-4" href="https://github.com/Jeka8833" target="_blank" rel="noopener noreferrer">
+        <a aria-label="Jeka8833's GitHub profile page" class="link-secondary fs-4" href="https://github.com/Jeka8833"
+           rel="noopener noreferrer nofollow" target="_blank">
             <i class="bi bi-github"></i>
         </a>
     </div>
@@ -340,35 +418,36 @@
 
 
 <!-- Image info Modal -->
-<div class="modal fade" id="imageInfo" tabindex="-1" aria-labelledby="ImageInfoLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="ImageInfoLabel" class="modal fade" id="imageInfo" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title fs-5" id="ImageInfoLabel">Image Info</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
                 <ul>
                     <li>
                         Map: <a href="https://vrchat.com/home/world/wrld_cf2e8fe9-5979-4ad9-8c0e-d7fe22e09073/info"
-                                target="_blank" rel="noopener noreferrer">Far beyond the horizon</a>
+                                rel="noopener noreferrer nofollow" target="_blank">Far beyond the horizon</a>
                     </li>
                     <li>
-                        Avatar: <a href="https://omatssu.gumroad.com/l/amriot" target="_blank"
-                                   rel="noopener noreferrer">Amriot</a>
+                        Avatar: <a href="https://omatssu.gumroad.com/l/amriot" rel="noopener noreferrer nofollow"
+                                   target="_blank">Amriot</a>
                     </li>
                     <li>
                         Avatar modules:
                         <ul>
                             <li>
-                                <a href="https://adjerry91.github.io/VRCFaceTracking-Templates" target="_blank"
-                                   rel="noopener noreferrer">VRCFT - Jerry's Templates</a> - Allows you to control the
-                                "muscles" on the avatar's face.
+                                <a href="https://adjerry91.github.io/VRCFaceTracking-Templates"
+                                   rel="noopener noreferrer nofollow"
+                                   target="_blank">VRCFT - Jerry's Templates</a> - Allows you to control the "muscles"
+                                on the avatar's face.
                             </li>
                             <li>
-                                <a href="https://github.com/kusomaigo/DeskyMode" target="_blank"
-                                   rel="noopener noreferrer">DeskyMode</a> - Allows you to control the rotation of the
-                                avatar's head.
+                                <a href="https://github.com/kusomaigo/DeskyMode" rel="noopener noreferrer nofollow"
+                                   target="_blank">DeskyMode</a> - Allows you to control the rotation of the avatar's
+                                head.
                             </li>
                         </ul>
                     </li>
@@ -379,28 +458,29 @@
 </div>
 
 <!-- VRChat Setup Modal -->
-<div class="modal fade" id="vrchatSetup" tabindex="-1" aria-labelledby="vrchatSetupLabel" aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="vrchatSetupLabel" class="modal fade" id="vrchatSetup" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title fs-5" id="vrchatSetupLabel">VRChat Setup</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h2 class="modal-title fs-5" id="vrchatSetupLabel">VRChat Setup Info</h2>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
             </div>
             <div class="modal-body">
                 <ol>
                     <li>
                         Enable OSC. A video of how to do this can be found <a
-                            href="https://www.youtube.com/watch?v=byXLmE9vVDs" target="_blank"
-                            rel="noopener noreferrer">here</a>.
+                            href="https://www.youtube.com/watch?v=byXLmE9vVDs" rel="noopener noreferrer nofollow"
+                            target="_blank">here</a>.
                         <div class="d-flex justify-content-center pt-2 pb-4">
-                            <img src="images/guide/OSC.png" class="w-50" alt="Enable OSC" loading="lazy">
+                            <img alt="How to enable OSC" class="w-50" loading="lazy" src="images/guide/OSC.png">
                         </div>
                     </li>
                     <li>
                         Enable the individual parts of the face tracking on the avatar. Unfortunately, all avatars are
                         unique, but roughly it will look like this:
                         <div class="d-flex justify-content-center pt-2 pb-4">
-                            <img src="images/guide/VrcftOptions.png" class="w-50" alt="VRCFT Options" loading="lazy">
+                            <img alt="Where VRCFT Options" class="w-50" loading="lazy"
+                                 src="images/guide/VrcftOptions.png">
                         </div>
                     </li>
                 </ol>
@@ -409,8 +489,8 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+<script crossorigin="anonymous"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
