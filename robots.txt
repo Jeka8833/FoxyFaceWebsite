@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /404.html
 Disallow: /README.md
 Disallow: /cgi-bin/
+Disallow: /cdn-cgi/

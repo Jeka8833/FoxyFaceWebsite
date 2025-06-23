@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://foxyface.jeka8833.pp.ua/</loc>
+        <lastmod>2025-06-23T18:20:02+03:00</lastmod>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://foxyface.jeka8833.pp.ua/images/favicon-144x144.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://foxyface.jeka8833.pp.ua/images/guide/VrcftOptions.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://foxyface.jeka8833.pp.ua/images/guide/OSC.png</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://foxyface.jeka8833.pp.ua/images/mainPage/Jeka8833-avatar.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://foxyface.jeka8833.pp.ua/images/mainPage/background.jpg</image:loc>
+        </image:image>
+    </url>
+</urlset>
